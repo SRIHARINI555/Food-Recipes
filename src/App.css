@@ -1,38 +1,84 @@
-.App {
+*{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  box-sizing: border-box;
+}
+
+.container{
+  background-color: #702963;
+  max-width: 1000px;
+  min-height: 100vh;
+  margin: 30px auto;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+h2{
+  text-align: center;
+  font-size: 40px;
+}
+
+form{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+input{
+  border: 4px solid #C3B1E1;
+  padding: 10px;
+  font-size: 15px;
+}
+
+input:focus{
+  outline: none;
+}
+
+.form-control{
+  border-radius: 25px;
+  width: 400px;
+}
+
+.btn{
+  border-radius: 20px;
+  cursor: pointer;
+  margin-left: 15px;
+}
+
+.recipes{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.card{
+  width: 200px;
+  background-color: #AA336A;
+  margin: 10px;
+  border-radius: 5px;
+  padding-bottom: 10px;
+}
+
+.card-image{
+  width: 100%;
+}
+
+.card-body{
+  padding: 10px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.category{
+  color: #D8BFB8;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a{
+  background-color: #E6E6FA;
+  color: #AA336A;
+  padding: 10px;
+  border-radius: 10px;
+  text-decoration: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
